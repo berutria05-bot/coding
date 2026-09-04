@@ -512,22 +512,31 @@ div > .explore-card {
 
 form {
    max-width: 600px;
-   margin: auto;
+   margin: 30px auto;
+   padding: 35px;
    text-align: left;
+
+   background-color: #e8f1ff;
+   border-radius: 20px;
+
+   box-shadow:0 5px 20px rgba(0, 0, 0, 0.1) ;
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-form input {
+form input,
+form select {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
 
-    border: none;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
 }
 
 form button {
@@ -537,15 +546,13 @@ form button {
     border: none;
     border-radius: 14px;
 
-    background-color: black;
+    background-color: blue;
     color: white;
 
     font-size: 16px;
     font-weight: bold;
 
     cursor: pointer;
-
-    transition: 0.3s;
 }
 
 form button {
@@ -562,33 +569,54 @@ footer {
     padding: 25px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
 
     nav {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     nav div {
+        gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
     }
 
-    #home h1 {
-        font-size: 40px;
+    #home {
+        min-height: auto;
+        padding: 40px 20px;
     }
 
-    #home p {
-        font-size: 18px;
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
 
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-content img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        aspect-ratio: 9 / 10;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .explore-card,
     .destination-card {
         width: 100%;
         margin: 10px 0;
-    }
-
-    section {
-        padding: 60px 5%;
     }
 }
