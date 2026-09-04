@@ -186,3 +186,46 @@ footer {
         gap: 20px;
     }
 }
+
+.carousel {
+    width: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+    width: 450px;
+    height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: black;
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
