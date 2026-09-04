@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL WEBSITE</title>
+    <link rel="stylesheet" href="travelweb.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div>
+                 <a href="#home" class="logo">Wanderly</a>
+            </div>
+
+            <div>
+                <a href="#explore">Explore</a>
+                <a href="#destination">Destination</a>
+                <a href="#about">About</a>
+                <a href="#plan" class="plan-btn">Plan a Trip</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+    <section id="home">
+        <div class="hero-content">
+        <h1>DISCOVER YOUR NEXT ADVENTURE</h1>
+
+        <p>
+            Explore beautiful destinations and<br>   
+            create unforgettable memories.   
+        </p>
+
+        <a href="#destination" class="explore-btn">Explore Now</a>
+
+        <img src="merapi😍.jpeg" alt="merapi">
+        </div>
+    </section>
+
+    <section id="explore">
+
+    <h2>EXPLORE YOUR WAY</h2>
+
+    <p>
+        Discover destinations based on the adventure you're looking for.
+    </p>
+
+    <div class="explore-container">
+
+        <div class="explore-card">
+            <h3>Gunung</h3>
+            <p>Discover breathtaking mountain adventures.</p>
+            <a href="#destination" class="btn btn-destinstion">Explore</a>
+        </div>
+
+        <div class="explore-card">
+            <h3>Pantai</h3>
+            <p>Relax and enjoy beautiful tropical beaches.</p>
+            <a href="#destination" class="btn btn-dstination">Explore</a>
+        </div>
+
+        <div class="explore-card">
+            <h3>Curug</h3>
+            <p>Experience peaceful and beautiful nature.</p>
+            <a href="#destination" class="btn btn-destination">Explore</a>
+        </div>
+    </div>
+
+</section>
+
+        <section id="destination">
+            <h2>POPULAR DESTINATIONS</h2>
+            <p>
+                Discover breathtaking places and unforgettable experiences.
+            </p>
+            <div class="destination-card">
+                <img src="Pesona gunung Bromo Indonesia.jpeg" alt="gunung-bromo">
+                <h3>Gunung Bromo</h3>
+                <p>
+                    East java,indonesia
+                </p>
+            </div>
+
+
+            <div class="destination-card">
+                <img src="+16 Tempat Wisata Pantai Parangtritis Di Jogja.jpeg" alt="pantai-parangtritis">
+                <h3>Pantai Parangtritis</h3>
+                <p>
+                    Yogyakarta,indonesia
+                </p>
+            </div>
+
+            <div class="destination-card">
+                <img src="Curug Putri Palutungan, Pesona Air Terjun Eksotis Nan Alami di Kuningan.jpeg" alt="curug">
+                <h3>Curug putri</h3>
+                <p>
+                    Kuningan,indonesia
+                </p>
+            </div>
+      </section>
+
+      <section id="about">
+        <h2>About us</h2>
+
+        <p>
+            Wanderly is a travel platform created to help you discover beautiful destinations and plan unforgettable journeys.<br>
+            From breathtaking mountains to peaceful beaches,<br>
+             we bring inspiring places closer to you.
+
+            We believe that traveling is more than just visiting new places.<br>
+            
+            It’s about creating memories, experiencing new cultures, and discovering something new along the way.
+        </p>
+      </section>
+
+      <section id="plan">
+        <h2>PLAN YOUR TRIP</h2>
+
+        <p>
+            Start planning your next unforgettable adventure
+        </p>
+
+        <form>
+            <label for="destination-select">Choose Destination</label>
+            <select id="destination-select">
+                <option value="">select a destination</option>
+                <option value="Gunung bromo">Gunung Bromo</option>
+                <option value="Pantai Parangtritis">Pantai Parangtritis</option>
+                <option value="Curug Putri">Curug Putri</option>
+            </select>
+        
+
+        <label for="date">Travel Date</label>
+        <input type="date" id="date">
+         
+        <label for="travelers">Number of Travelers</label>
+        <input type="number" id="travelers" min="1" value="1">
+
+        <button type="submit">Start Planning</button>
+        </form>
+      </section>
+
+    </main>
+
+      <footer>
+        <p>
+            &copy; Travelers indonesia
+        </p>
+      </footer>
+</body>
+</html>
